@@ -4,41 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BonsaiTech - Infraestrutura Sustentável</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-    body { background-color: #fafafa; color: #2d3748; line-height: 1.6; }
-
-    .gradient-bg {
-      background: linear-gradient(135deg, #1b4332 0%, #40916c 50%, #39785c 100%);
-      color: white;
-    }
-
-    header { padding: 30px 50px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-    header h1 { font-size: 32px; font-weight: 700; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
-
-    nav ul { list-style: none; display: flex; gap: 30px; }
-    nav a { color: white; text-decoration: none; font-weight: 600; font-size: 16px; border-bottom: 2px solid transparent; transition: border 0.3s; }
-    nav a:hover { border-bottom: 2px solid white; }
-
-    main { padding: 60px 20px; text-align: center; max-width: 1000px; margin: 0 auto; }
-
-    .storyTelling { margin-bottom: 50px; }
-    .storyTelling h2 { font-size: 38px; color: #1b4332; margin-bottom: 20px; line-height: 1.2; }
-    .storyTelling p { font-size: 18px; color: #4a5568; margin-bottom: 20px; text-align: justify; }
-
-    .dadoImpacto { background-color: #edf2f7; padding: 25px; border-left: 5px solid #dba716; font-style: italic; color: #2d3748; margin: 30px 0; border-radius: 4px; text-align: left; }
-
-    .btn-catalogo { display: inline-block; background-color: #1b4332; color: white; padding: 15px 30px; text-decoration: none; border-radius: 6px; font-weight: bold; margin-top: 20px; transition: background 0.3s; }
-    .btn-catalogo:hover { background-color: #0f291e; }
-
-    .midiaDestaque { margin-top: 60px; }
-
-    video { width: 100%; max-width: 700px; border-radius: 12px; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-
-    footer { padding: 50px 20px; text-align: center; margin-top: 60px; }
-    footer h3 { margin-bottom: 15px; font-size: 24px; }
-    footer p { font-size: 15px; opacity: 0.9; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -48,7 +14,7 @@
     <ul>
       <li><a href="index.html">Início</a></li>
       <li><a href="produtos.html">Catálogo</a></li>
-      <li><a href="#contato">Fale Conosco</a></li>
+      <li><a href="contato.html">Fale Conosco</a></li>
     </ul>
   </nav>
 </header>
@@ -70,15 +36,12 @@
   </section>
 
   <section class="midiaDestaque">
-    <p style="margin-bottom: 15px; color: #718096; font-size: 14px;">(Fonte: www.pexels.com)</p>
-
+    <p class="fonte-video">(Fonte: www.pexels.com)</p>
     <video autoplay loop muted playsinline>
       <source src="videozinho-natura.mp4" type="video/mp4">
     </video>
   </section>
 </main>
-
-<!--Aqui deixei separado para a área de contato que iremos fazer depois nas próximas atividades-->
 
 <footer id="contato" class="gradient-bg">
   <h3>Projetos Sob Medida</h3>
@@ -86,12 +49,10 @@
 
   <a href="contato.html" class="btn-contato-footer">Falar com a Equipe</a>
 
-  <p style="margin-top: 15px;">Gabriel Cedraschi Dias de Araujo - ADS</p>
+  <p class="assinatura">Gabriel Cedraschi Dias de Araujo - ADS</p>
   <p> RA: 10791976</p>
-
 </footer>
 
+<!--Boa tarde, prof! As imagens que usei de referência são do site "pexels". Como é uma atividade no campo da educação, acredito que não haja problema, mas caso algum dia precise fazer deploy para concept e possa haver algum problema de autoriacom no projeto, posso remover sem problemas!-->
 </body>
 </html>
-
-<!--Boa tarde, prof! As imagens que usei de referência são do site "pexels". Como é uma atividade no campo da educação, acredito que não haja problema, mas caso algum dia precise fazer deploy para concept e possa haver algum problema de autoriacom no projeto, posso remover sem problemas!-->
