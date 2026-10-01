@@ -4,50 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pacotes - BonsaiTech</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { background-color: #fafafa; color: #2d3748; }
-
-        .gradient-bg { background: linear-gradient(135deg, #1b4332 0%, #40916c 50%, #39785c 100%); color: white; }
-
-        header { padding: 25px 50px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-        header h1 { font-size: 28px; }
-
-        nav a { color: #1b4332; background-color: white; padding: 8px 16px; text-decoration: none; font-weight: bold; border-radius: 4px; font-size: 14px; transition: transform 0.2s; }
-        nav a:hover { transform: scale(1.05); }
-
-        main { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
-        .titulo-pagina { text-align: center; margin-bottom: 50px; font-size: 32px; color: #1b4332; }
-
-
-        .gradePacotes { list-style: none; display: flex; gap: 30px; justify-content: center; flex-wrap: wrap; }
-
-        .pacote { background: white; padding: 30px; border-radius: 12px; width: 350px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #40916c; display: flex; flex-direction: column; }
-        .pacote:hover { box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
-
-        .pacote img { width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 20px; background-color: #edf2f7; }
-
-        .nivel { font-size: 12px; font-weight: bold; color: #b7791f; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 5px; }
-        .pacote h3 { font-size: 22px; color: #1a202c; margin-bottom: 15px; }
-        .pacote p { font-size: 15px; color: #4a5568; margin-bottom: 20px; flex-grow: 1; line-height: 1.5; }
-
-        .preco { font-size: 26px; font-weight: 800; color: #1b4332; border-top: 1px solid #e2e8f0; padding-top: 15px; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="gradient-bg">
+<header class="gradient-bg header-produtos">
     <h1>BonsaiTech</h1>
     <nav>
-        <a href="index.html">⬅ Voltar ao Início</a>
+        <a href="index.html" class="btn-voltar">⬅ Voltar ao Início</a>
     </nav>
 </header>
 
-<main>
+<main class="main-produtos">
     <h2 class="titulo-pagina">Pacotes de Infraestrutura Sustentável</h2>
 
     <ul class="gradePacotes">
-
         <li class="pacote">
             <img src="pacote-semente.jpg" alt="Kit Painel Solar Portátil">
             <span class="nivel">Nível Base</span>
@@ -71,10 +42,8 @@
             <p>Workstation parruda de alta performance aliada a um sistema fotovoltaico híbrido de 2kW e banco de baterias. Autonomia total ao seu ambiente de desenvolvimento e rede continuam de pé mesmo se a energia da rua cair.</p>
             <div class="preco">R$ 18.500,00</div>
         </li>
-
     </ul>
 </main>
 
 </body>
 </html>
-<!--Valores levemente fora da realidade, mas o importante é o concept haha-->
