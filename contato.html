@@ -4,52 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BonsaiTech - Fale Conosco</title>
-  <style>
-
-    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-    body { background-color: #fafafa; color: #2d3748; line-height: 1.6; }
-
-    .gradient-bg {
-      background: linear-gradient(135deg, #1b4332 0%, #40916c 50%, #39785c 100%);
-      color: white;
-    }
-
-    header { padding: 30px 50px; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-    header h1 { font-size: 32px; font-weight: 700; text-shadow: 1px 1px 2px rgba(0,0,0,0.2); }
-
-    nav ul { list-style: none; display: flex; gap: 30px; }
-    nav a { color: white; text-decoration: none; font-weight: 600; font-size: 16px; border-bottom: 2px solid transparent; transition: border 0.3s; }
-    nav a:hover { border-bottom: 2px solid white; }
-
-    main { padding: 60px 20px; max-width: 800px; margin: 0 auto; }
-
-    h2 { font-size: 38px; color: #1b4332; margin-bottom: 10px; text-align: center; }
-    .desc-contato { text-align: center; margin-bottom: 40px; color: #4a5568; }
-
-    fieldset { border: 2px solid #39785c; border-radius: 8px; padding: 25px; background-color: white; }
-    legend { font-weight: bold; color: #1b4332; padding: 0 10px; font-size: 20px; }
-
-    table { width: 100%; border-collapse: collapse; }
-    td { padding: 12px; vertical-align: middle; }
-    td:first-child { width: 35%; text-align: right; font-weight: 600; color: #2d3748; }
-
-    input[type="text"], input[type="email"], input[type="tel"], input[type="number"], input[type="date"], select, textarea {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 15px;
-    }
-
-    .botoesContainer { text-align: center; padding-top: 20px; }
-    .btn-submit { background-color: #1b4332; color: white; padding: 12px 30px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; transition: background 0.3s; }
-    .btn-submit:hover { background-color: #0f291e; }
-    .btn-reset { background-color: #e2e8f0; color: #2d3748; padding: 12px 30px; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; margin-left: 10px; transition: background 0.3s; }
-    .btn-reset:hover { background-color: #cbd5e0; }
-
-    footer { padding: 50px 20px; text-align: center; margin-top: 60px; }
-    footer p { font-size: 15px; opacity: 0.9; }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -64,8 +19,8 @@
   </nav>
 </header>
 
-<main>
-  <h2>Fale Conosco</h2>
+<main class="main-contato">
+  <h2 class="titulo-contato">Fale Conosco</h2>
   <p class="desc-contato">Preencha o formulário abaixo para dimensionar a carga do seu setup, não vamos fazer spam, não se acanhe!</p>
 
   <form action="" method="get">
@@ -73,7 +28,6 @@
       <legend>Dados do Projeto</legend>
 
       <table>
-
         <tr>
           <td><label for="nome">Nome Completo:</label></td>
           <td><input type="text" id="nome" name="nome" placeholder="Digite seu nome" required autofocus
@@ -143,11 +97,11 @@
 
         <tr>
           <td></td>
-          <td style="padding-top: 10px;">
+          <td class="celula-checkbox">
             <input type="checkbox" id="termos" name="termos" value="aceito" required
                    oninvalid="this.setCustomValidity('Só falta assinalar, assim poderemos continuar com o contato :) ')"
-                   oninput="this.setCustomValidity('')"></textarea>
-            <label for="termos" style="font-size: 14px; color: #4a5568;">Aceito receber contato da equipe técnica.</label>
+                   oninput="this.setCustomValidity('')">
+            <label for="termos" class="label-termos">Aceito receber contato da equipe técnica.</label>
           </td>
         </tr>
 
@@ -170,5 +124,3 @@
 
 </body>
 </html>
-
-<!-- Ainda não implementei algo com formspree ou semelhante para receber as requisições, então qualquer envio no cadastro, não está sendo enviado a lugar nenhum.-->
